@@ -1,0 +1,57 @@
+
+.footer{
+    border-top: 2px solid #2997AB;
+    height: 30vh;
+    width: 100%;
+    background-color: #E2E3E6;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer div{
+    height: 30vh;
+    line-height: 24px;
+}
+
+.footer h2{
+    padding-top: 3vh;
+    color: #2997AB;
+    padding-bottom: 2vh;
+}
+
+.footer img{
+    padding-top: 3vh;
+}
+
+
+.design{
+    padding-top: 10px;
+    background-color: rgba(0,93,170,1);
+    height:10vh;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.design h3{
+    color: white;
+    font-size: 17px;
+}
+
+.design h2{
+    color: white;
+    font-size: 20px;
+}
+
+.design a{
+    text-decoration: underline;
+    color: white;
+    transition: 0.7s;
+}
+
+.design a:hover{
+    color:#77C4F9;
+}
+
+

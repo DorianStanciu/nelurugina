@@ -1,0 +1,256 @@
+@import "nav.css";
+@import "footer.css";
+
+/*<-------------------------------  CULORI ------------------------------->*/
+
+/*
+
+background-color: #1D4866 // albastru inchis
+background-color: #77C4F9 // albastru deschis
+background-color: rgba(0,93,170,1); // albastru
+color: #2997AB;
+
+
+*/
+
+/*<-------------------------------  GENERAL ------------------------------->*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.harta{
+    padding-top: 12vh;
+    width: 100%;
+    height: 60vh;
+}
+
+.harta img{
+    height: 60vh;
+    width: 100%;
+}
+
+.content{
+    height: 80vh;
+    width: 40%;
+}
+
+.content{
+    margin-top: 12vh;
+}
+
+.content h1{
+    padding-top: 10vh;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.contentwrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.content p{
+    padding-top: 5vh;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.content span{
+    color: #2997AB;
+}
+
+/*<-------------------------------  PART4 ------------------------------->*/
+
+.part4{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.part4 div{
+    width: 30%;
+    height: 50vh;
+    margin-top: 10vh;
+}
+
+.part4 img{
+    width: 100%;
+    height: 35vh;
+}
+
+#btnservicii{
+    height: 40px;
+    width: 100px;
+    margin-bottom: 10vh;
+    background-color: rgba(0,93,170,1);
+    border: none;
+    color: white;
+}
+
+#btnservicii:hover{
+    background-color: #2997AB;
+    cursor: pointer;
+}
+
+.part4buton{
+    height: 20vh;
+    text-align: center;
+    width: 100%;
+}
+
+.part4 h3{
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:704px){
+    .part2 {
+        height: 60vh;
+    }
+    .footer h2{
+        font-size: 16px;
+    }
+    .footer p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .topline p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 564px) {
+    .footer{
+        height: 90vh;
+        display: block;
+    }
+    .footer div{
+        margin: 0 auto;
+        width: 60%;
+    }
+    .design{
+        margin-top: 5vh;
+    }
+    .center p{
+        display: none;
+    }
+    .part2{
+        height: auto;
+        display: block;
+    }
+    .part2 .box1,.box2,.box3{
+        margin: 0 auto;
+        height: 40vh;
+        margin-top: 5vh;
+        width: 60%;
+    }
+    .buttons button#next {
+        top: 50%;
+    }
+    .buttons button#prev {
+        top: 50%;
+    }
+    .design{
+        min-height: 20vh;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .part1 ul li a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .part1 ul li a{
+        font-size: 13px;
+    }
+    .part4{
+        margin-top: 10vh;
+        height: auto;
+        display: block;
+    }
+    .part4 div{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .design h2{
+        font-size: 17px;
+    }
+    .design h3{
+        font-size: 14px;
+    }
+    .topline i{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .design h2{
+        font-size: 15px;
+    }
+    .design h3{
+        font-size: 12px;
+    }
+    .part2 .box1,.box2,.box3{
+        height: 50vh;
+    }
+    .buttons button#prev{
+        display: none;
+    }
+    .buttons button#next{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 250px){
+    .topline p{
+        font-size: 10px;
+    }
+    .part1 ul li a{
+        font-size: 14px;
+        padding: 10px;
+    }
+    .part1 .logo{
+        display: none;
+    }
+    .part3 h2{
+        font-size: 16px;
+    }
+    .part3 p{
+        font-size: 12px;
+    }
+    .part3 {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .content h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-height: 700px){
+    #harta{
+        height: 350px;
+    }
+}
+
+

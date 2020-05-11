@@ -1,0 +1,473 @@
+@import "nav.css";
+@import "footer.css";
+
+/*<-------------------------------  CULORI ------------------------------->*/
+
+/*
+
+background-color: #1D4866 // albastru inchis
+background-color: #77C4F9 // albastru deschis
+background-color: rgba(0,93,170,1); // albastru
+color: #2997AB;
+
+
+*/
+
+/*<-------------------------------  GENERAL ------------------------------->*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*<-------------------------------  PART1 ------------------------------->*/
+
+.part1{
+    height: 80vh;
+    width: 100%;
+}
+
+.titluwrap{
+    margin-top: 10vh;
+    float: left;
+    height: 70vh;
+    width: 100%;
+}
+
+/*<-------------------------------  SLIDESHOW ------------------------------->*/
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}  
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.logocentrudiv{
+    position: absolute;
+    top: 40%;
+    line-height: 1.8;
+}
+
+
+#slide1h1, #slide1h2{
+    color: rgba(0,93,170,1);
+    background-color: rgba(255,255,255,0.3)
+}
+
+#slide2h1 , #slide2h2{
+    color: white;
+}
+  
+.slide.current {
+    opacity: 1;
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.buttons button#next {
+    background-color: rgba(0,93,170,0.8);
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+        right: 50px;
+        border-radius: 3px 0 0 3px;
+}
+  
+.buttons button#prev {
+    background-color: rgba(0,93,170,0.8);
+    cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  left: 50px;
+}
+  
+.buttons button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+    z-index: 4;}
+
+.buttons button i{
+      padding-top: 3px;}
+  
+.buttons button#next:hover {
+    background-color: #77C4F9;
+}
+
+.buttons button#prev:hover {
+    background-color: #77C4F9;
+}
+
+
+    /* Background Images */
+   
+.slide:first-child {
+    background: url('../img/poza1.jpg') no-repeat
+   center/cover;
+   }
+.slide:nth-child(2) {
+    background: url('../img/backdespre.jpg') no-repeat
+      center/cover;
+      }
+
+/*<-------------------------------  PART2 ------------------------------->*/
+
+.part2{
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #e3e8e5;
+}
+
+.part2 .box1, .box2, .box3{
+    margin-top: 10vh;
+    height: 30vh;
+    width: 24%;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.part2 h2{
+    margin-top: 1vh;
+    text-align: center;
+    font-weight: bold;
+}
+
+.part2 h4{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+.h4box{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -3vh;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(0,93,170,1); 
+    border-radius: 50%;
+}
+
+.part2 h3{
+  margin-top: 2vh;
+  color: #666666;
+}
+
+.part2 h3 span{
+  color: #2997AB;
+}
+
+/*<-------------------------------  PART3 ------------------------------->*/
+
+.part3{
+    height: 120vh;
+    width: 100%;
+    background-image:linear-gradient(to right bottom, rgba(255,255,255,0.4), rgba(255,255,255,0.4)),url('../img/despre2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.part3 h2{
+    padding-top: 10vh;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20%;
+    color: black;
+}
+
+.part3 p{
+    font-size: 24px;
+    padding-top: 10vh;
+    font-weight: bold;
+    margin-left: 20%;
+    line-height: 1.6;
+    margin-right: 20%;
+    color: black;
+}
+
+.pozamedic{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.part3 img{
+    margin-top: 10vh;
+}
+
+.part3 h3{
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.part3 h4{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+
+/*<-------------------------------  PART4 ------------------------------->*/
+
+.part4{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.part4 div{
+    width: 30%;
+    height: 50vh;
+    margin-top: 10vh;
+}
+
+.part4 img{
+    width: 100%;
+    height: 35vh;
+}
+
+#btnservicii{
+    height: 40px;
+    width: 100px;
+    margin-bottom: 10vh;
+    background-color: rgba(0,93,170,1);
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+
+#btnservicii:hover{
+    background-color: #2997AB;
+    cursor: pointer;
+}
+
+.part4buton{
+    height: 20vh;
+    text-align: center;
+    width: 100%;
+}
+
+.part4 h3{
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*<-------------------------------  RESPONSIVE ------------------------------->*/
+
+@media screen and (max-width:704px){
+    .part2 {
+        height: 60vh;
+    }
+    .footer h2{
+        font-size: 16px;
+    }
+    .footer p{
+        font-size: 14px;
+    }
+    .slide:nth-child(2) {
+        background: url('../img/backdespre.jpg') no-repeat
+          right/cover;
+          }
+          .slide:nth-child(1) {
+            background: url('../img/poza3.jpg') no-repeat
+              center/cover;
+              }
+}
+
+@media screen and (max-width: 760px) {
+    .topline p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 564px) {
+    .footer{
+        height: 90vh;
+        display: block;
+    }
+    .footer div{
+        margin: 0 auto;
+        width: 60%;
+    }
+    .design{
+        margin-top: 5vh;
+    }
+    .center p{
+        display: none;
+    }
+    .part2{
+        height: auto;
+        display: block;
+    }
+    .part2 .box1,.box2,.box3{
+        margin: 0 auto;
+        height: 40vh;
+        margin-top: 5vh;
+        width: 60%;
+    }
+    .buttons button#next {
+        top: 50%;
+    }
+    .buttons button#prev {
+        top: 50%;
+    }
+    .design{
+        min-height: 20vh;
+        margin-top: 0;
+    }
+    .part2 .box1{
+        margin-top: 0;
+        padding-top: 5vh;
+    }
+    .part2 .box1, .box2, .box3{
+        min-height: 350px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .part1 ul li a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .part1 ul li a{
+        font-size: 13px;
+    }
+    .part4{
+        margin-top: 10vh;
+        height: auto;
+        display: block;
+    }
+    .part4 div{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .design h2{
+        font-size: 17px;
+    }
+    .design h3{
+        font-size: 14px;
+    }
+    .topline i{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .design h2{
+        font-size: 15px;
+    }
+    .design h3{
+        font-size: 12px;
+    }
+    .part2 .box1,.box2,.box3{
+        height: 50vh;
+    }
+    .buttons button#prev{
+        display: none;
+    }
+    .buttons button#next{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 250px){
+    .topline p{
+        font-size: 10px;
+    }
+    .part1 ul li a{
+        font-size: 14px;
+        padding: 10px;
+    }
+    .part1 .logo{
+        display: none;
+    }
+    .part3 h2{
+        font-size: 16px;
+    }
+    .part3 p{
+        font-size: 12px;
+    }
+    .part3 {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .buttons button{
+        display: none;
+    }
+}
+
+
+
+
